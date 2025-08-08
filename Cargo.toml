@@ -1,7 +1,11 @@
 [package]
 name = "baby-shark"
 version = "0.1.0"
+authors = [ "dunlopWill" ]
 edition = "2024"
+rust-version = "1.88.0"
+description = "Prints a very popular kid's song."
+license = "MIT License"
 
 [dependencies]
 clap = "2.33"
