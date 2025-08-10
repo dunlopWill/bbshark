@@ -1,5 +1,5 @@
 [package]
-name = "baby-shark"
+name = "bbshark"
 version = "0.1.0"
 authors = [ "dunlopWill" ]
 edition = "2024"

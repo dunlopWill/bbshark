@@ -1,7 +1,7 @@
 use clap::{App, Arg};
 
 fn main() {
-    let matches = App::new("baby-shark")
+    let matches = App::new("bbshark")
         .version("0.1.0")
         .author("https://github.com/dunlopWill")
         .about("Rust baby shark")
