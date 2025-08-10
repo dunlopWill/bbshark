@@ -4,8 +4,12 @@ version = "0.1.0"
 authors = [ "dunlopWill" ]
 edition = "2024"
 rust-version = "1.88.0"
-description = "Prints a very popular kid's song."
+description = "Command-line interface to prints a very popular kid's song."
+readme = "https://github.com/dunlopWill/bbshark/blob/main/README.md"
+repository = "https://github.com/dunlopWill/bbshark"
 license = "MIT"
+license-file = "https://github.com/dunlopWill/bbshark/blob/main/LICENSE"
+keywords = ["bbshark", "song", "kids", "cli", "command-line", "fun"]
 
 [dependencies]
 clap = "2.33"
