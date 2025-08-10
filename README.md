@@ -46,7 +46,7 @@ Add a help flag (`-h` or `--help`) to get CLI instructions:
 # ...
 ```
 
-### Doos
+#### Doos
 
 Vary the number of "doo"s by specifying a number between 1 and 127:
 
@@ -54,6 +54,35 @@ Vary the number of "doo"s by specifying a number between 1 and 127:
 .cargo/bin/bbshark -d 12
 # Baby shark... doo, doo, doo, doo, doo, doo, doo, doo, doo, doo, doo, doo.
 # Baby shark!
+```
+
+### Bonus
+
+Consider piping stdout into `cowsay` and/or `lolcat`:
+
+```bash
+.cargo/bin/bbshark | cowsay -f turtle | lolcat
+ # ________________________________________
+# / Baby shark... doo, doo, doo, doo, doo, \
+# \ doo. Baby shark!                       /
+ # ----------------------------------------
+    # \                                  ___-------___
+     # \                             _-~~             ~~-_
+      # \                         _-~                    /~-_
+             # /^\__/^\         /~  \                   /    \
+           # /|  O|| O|        /      \_______________/        \
+          # | |___||__|      /       /                \          \
+          # |          \    /      /                    \          \
+          # |   (_______) /______/                        \_________ \
+          # |         / /         \                      /            \
+           # \         \^\\         \                  /               \     /
+             # \         ||           \______________/      _-_       //\__//
+               # \       ||------_-~~-_ ------------- \ --/~   ~\    || __/
+                 # ~-----||====/~     |==================|       |/~~~~~
+                  # (_(__/  ./     /                    \_\      \.
+                         # (_(___/                         \_____)_)
+# 
+# 
 ```
 
 ## Build steps
