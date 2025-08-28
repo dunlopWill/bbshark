@@ -48,22 +48,26 @@ fn get_number_of_doos() -> u8 {
     return check_number_is_not_zero(number, doos)
 }
 
-fn print_doos_times(number: u8) {
-    print!("Baby shark... ");
+fn print_word(word: &str, number: u8, sep: &str) {
     let mut i = 0;
     while i < number {
-        print!("doo");
+        print!("{}", word);
         i += 1;
         if i < number {
-            print!(", ");
+            print!("{} ", sep);
         }
     }
-    print!(".\n");
-    print!("Baby shark!");
 }
 
 fn main() {
     let number = get_number_of_doos();
-    print_doos_times(number);
+    let relative = "Baby";
+    let doo = "doo";
+    let sep = ",";
+    let animal = "shark";
+    print!("{} {}... ", relative, animal);
+    print_word(doo, number, sep);
+    print!(".\n");
+    print!("{} {}!", relative, animal);
     std::process::exit(0)  // Exit with a zero status to indicate success
 }
