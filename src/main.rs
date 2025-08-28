@@ -1,6 +1,6 @@
 use clap::{App, Arg};
 
-fn main() {
+fn get_number_of_doos() -> u8 {
     let matches = App::new("bbshark")
         .version("0.1.2")
         .author("https://github.com/dunlopWill")
@@ -29,7 +29,11 @@ fn main() {
     if number == 0 {
         eprintln!("Must enter an unsigned integer between 1 and 127 (u8). Got '{}'", doos);
         std::process::exit(1)  // Exit with a non-zero status to indicate error
-    }
+    };
+    return number
+}
+
+fn print_doos_times(number: u8) {
     print!("Baby shark... ");
     let mut i = 0;
     while i < number {
@@ -41,5 +45,10 @@ fn main() {
     }
     print!(".\n");
     print!("Baby shark!");
+}
+
+fn main() {
+    let number = get_number_of_doos();
+    print_doos_times(number);
     std::process::exit(0)  // Exit with a zero status to indicate success
 }
