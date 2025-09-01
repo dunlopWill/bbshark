@@ -3,7 +3,7 @@ use std::num::ParseIntError;
 
 fn get_cmd_line_input() -> ArgMatches<'static> {
     let matches = App::new("bbshark")
-        .version("0.1.2")
+        .version("1.0.0")
         .author("https://github.com/dunlopWill")
         .about("Rust baby shark")
         .arg(

@@ -1,6 +1,6 @@
 [package]
 name = "bbshark"
-version = "0.1.2"
+version = "1.0.0"
 authors = [ "dunlopWill" ]
 edition = "2024"
 rust-version = "1.88.0"
